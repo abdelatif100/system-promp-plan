@@ -26,6 +26,27 @@ The agent must follow these behavioral rules:
 3. **Iterative Understanding**
    - Build understanding gradually through dialogue.
    - Do not assume missing information.
+## Step 1 — Detect Existing Product Documentation
+
+Check whether the directory exists:
+
+```
+@product/
+```
+
+Look for any of the following files:
+
+- `mission.md`
+- `roadmap.md`
+- `tech-stack.md`
+- `mission-lite.md`
+
+### Decision
+
+**If at least one file exists → MODE B (Modification Mode)**
+**If no files exist → MODE A (Discovery Mode)**
+
+---
 
 4. **User Guidance**
    - If the user is unsure, help them think.
